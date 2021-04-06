@@ -16,6 +16,27 @@ post数据那一栏填入：
 
 这一行数据即可
 
+协议头可以为空
+
+为空的时候post数据类型为(&)符号的时候：name=xxx&passwd=xxx&code=xxx
+
+post数据为json数据的时候
+![image](https://user-images.githubusercontent.com/72113877/113653575-b2a95700-96c8-11eb-9389-7953bdb55008.png)
+
+协议头填：Content-Type: application/json
+
+post数据为url部分编码的时候
+
+![image](https://user-images.githubusercontent.com/72113877/113653818-20558300-96c9-11eb-90b9-dfd787eacbfe.png)
+
+协议头填：Content-Type: application/x-www-form-urlencoded
+
+post数据为下面的时候
+
+上传文件的时候的格式
+
+协议头填：Content-Type: multipart/form-data
+
 相应的下面配置验证码，填入验证码对应的web地址（如果碰到对应的时间戳地址，则不取时间戳，只取能刷新出来验证码页面的web地址）
 
 配置完之后，点击发送重发器
